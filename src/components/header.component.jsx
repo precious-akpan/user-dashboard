@@ -1,16 +1,16 @@
-import { useState, Fragment } from "react";
+import { Fragment, useState } from "react";
 import { Dialog, Menu, Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { PhoneIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
 import { IoLogOut } from "react-icons/io5";
 import { BsPhoneFill } from "react-icons/bs";
 import { MdDashboard, MdHelp } from "react-icons/md";
 
-const callsToAction = [
-  { name: "Watch demo", href: "#", icon: PlayCircleIcon },
-  { name: "Contact sales", href: "#", icon: PhoneIcon },
-];
-
+/**
+ * Combines multiple class names into a single string.
+ *
+ * @param {...string} classes - The class names to be combined.
+ * @return {string} - The combined class names as a single string.
+ */
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -26,7 +26,7 @@ export default function HeaderComponent() {
       >
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className={'text-xl'}>DealBeta</span>
+            <span className={"text-xl"}>DealBeta</span>
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -54,7 +54,9 @@ export default function HeaderComponent() {
             <a
               href="#"
               className="flext text-sm font-semibold leading-6 text-gray-900"
-            >My Gadgets</a>
+            >
+              My Gadgets
+            </a>
           </div>
 
           <div className={"flex"}>
@@ -94,7 +96,10 @@ export default function HeaderComponent() {
                   {({ active }) => (
                     <a
                       href="#"
-                      className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                      className={classNames(
+                        active ? "bg-gray-100" : "",
+                        "block px-4 py-2 text-sm text-gray-700",
+                      )}
                     >
                       Your Profile
                     </a>
@@ -104,7 +109,10 @@ export default function HeaderComponent() {
                   {({ active }) => (
                     <a
                       href="#"
-                      className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                      className={classNames(
+                        active ? "bg-gray-100" : "",
+                        "block px-4 py-2 text-sm text-gray-700",
+                      )}
                     >
                       Settings
                     </a>
@@ -114,7 +122,10 @@ export default function HeaderComponent() {
                   {({ active }) => (
                     <a
                       href="#"
-                      className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                      className={classNames(
+                        active ? "bg-gray-100" : "",
+                        "block px-4 py-2 text-sm text-gray-700",
+                      )}
                     >
                       Sign out
                     </a>
@@ -169,11 +180,7 @@ export default function HeaderComponent() {
                   }
                 >
                   <BsPhoneFill className={"m-1"} />
-                  <a
-                    href="#"
-                  >
-                    My Gadgets
-                  </a>
+                  <a href="#">My Gadgets</a>
                 </div>
                 <div
                   className={
@@ -181,11 +188,7 @@ export default function HeaderComponent() {
                   }
                 >
                   <MdHelp className={"m-1"} />
-                  <a
-                    href="#"
-                  >
-                    Help
-                  </a>
+                  <a href="#">Help</a>
                 </div>
               </div>
               <div className="py-6">

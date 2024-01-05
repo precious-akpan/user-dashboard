@@ -35,7 +35,7 @@ export default function ConversionRankingCard({ cardTitle, icon }) {
                 plugins: {
                   legend: {
                     position: "right",
-                    labels: { padding: 5, borderRadius: 15 },
+                    labels: { padding: 5, },
                   },
                 },
               }}
