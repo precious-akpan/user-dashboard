@@ -1,7 +1,7 @@
 import { Doughnut } from "react-chartjs-2";
 
 import { ArcElement, Chart as ChartJS, Legend, Tooltip } from "chart.js";
-import Card from "./card.component";
+import Card from "../card/card.component";
 import { TbTargetArrow } from "react-icons/tb";
 
 ChartJS.register(ArcElement, Tooltip, Legend);

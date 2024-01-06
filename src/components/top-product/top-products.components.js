@@ -1,5 +1,5 @@
-import Card from "./card.component";
-import Product from "./product.component";
+import Card from "../card/card.component";
+import Product from "../product/product.component";
 import { useEffect, useState } from "react";
 import axios from "axios";
 

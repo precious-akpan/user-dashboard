@@ -1,6 +1,5 @@
-import "./App.css";
-import HeaderComponent from "./components/header.component";
-import MidSectionComponent from "./components/mid-section.component";
+import HeaderComponent from "./components/header/header.component";
+import MidSectionComponent from "./components/mid-section/mid-section.component";
 
 function App() {
   return (

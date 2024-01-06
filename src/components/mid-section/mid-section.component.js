@@ -1,10 +1,10 @@
 import { MdOutlineAddBox } from "react-icons/md";
-import CardComponent from "./cardList.component";
+import CardComponent from "../card-list/cardList.component";
 import { PiHandbagFill } from "react-icons/pi";
 import { RiBarChartBoxFill } from "react-icons/ri";
 import { FaArrowsRotate } from "react-icons/fa6";
-import ConversionRankingCard from "./conversionRankingCard";
-import TopProducts from "./top-products.components";
+import ConversionRankingCard from "../conversion-card/conversionRankingCard";
+import TopProducts from "../top-product/top-products.components";
 
 const MidSectionComponent = () => {
   return (

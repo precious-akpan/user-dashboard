@@ -1,7 +1,7 @@
 import { FiEdit } from "react-icons/fi";
 import { RiDeleteBin6Fill } from "react-icons/ri";
 import Switch from "react-input-switch";
-import EditProductModal from "./edit-product-modal";
+import EditProductModal from "../edit-product-modal/edit-product-modal";
 import { useState } from "react";
 
 export default function Product({ product, deleteProductHandler }) {

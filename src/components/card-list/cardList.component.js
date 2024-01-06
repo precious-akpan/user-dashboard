@@ -1,7 +1,7 @@
 import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
-import Card from "./card.component";
+import Card from "../card/card.component";
 
-export default function ({
+export default function CardList ({
   cardTitle,
   value,
   totalValue,
